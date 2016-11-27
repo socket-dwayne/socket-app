@@ -1,2 +1,2 @@
-# socket-app
-The Socket App - client for telegram
+# Socket client for telegram
+The Socket App - public & open sourceclient for telegram
