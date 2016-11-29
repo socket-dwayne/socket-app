@@ -1,0 +1,165 @@
+.bar {
+  background-color: rgb(54, 131, 166);
+  position: fixed;
+  left: 145px;
+  top: 0px;
+  width: 989px;
+  height: 44px;
+  z-index: 11;
+}
+.bar .user-avatar {
+	width: 3.8%;
+	height: 88%;
+	position: relative;
+	padding-left: 86%;
+	padding-top: 0.2%;
+	}
+.block-left {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  left: 145px;
+  top: 43px;
+  width: 309px;
+  height: 846px;
+  z-index: 7;
+}
+.block-right {
+  border-width: 0px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  left: 457px;
+  top: 43px;
+  width: 677px;
+  height: 846px;
+  z-index: 6;
+}
+.block-left .box-user {
+  background-color: rgb(54, 131, 166);
+  opacity: 0.902;
+  margin-top: 50;
+  width: 309px;
+  height: 84px;
+  z-index: 30;
+}
+.username a {
+	font-family: Helvetica;
+	font-size: 20;
+}
+
+.search-edit {
+  height: 78;
+}
+.search-edit input[type=text] {
+  background-image: url(assets/search-icon.png);   
+  background-repeat: no-repeat; /*Убираем повтор изображения*/   
+  background-position: 20px; /*Позиционируем*/ 
+  background-color: rgb(242,242,242);  
+  outline: none;
+  border-radius: 3px;
+  background-color: e8e8e8;
+  position: absolute;
+  padding-left: 60px;
+  margin-left: 11px;
+  margin-top: 20px;
+  width: 287px;
+  height: 36px;
+  z-index: 30;
+  border: 0px;
+  box-shadow: 0px ;
+  font-family: Helvetica;
+  font: Regular;
+  font-size: 14;
+}
+.search-edit input[type=text]:focus{
+	background-color: rgb(255,255,255);
+	border: 1px solid rgb(231,235,240);
+}
+.contact-box {
+  background-color: white; /*rgb(54, 131, 166)*/
+  opacity: 0.902;
+  position: fixed;
+  width: 309px;
+  height: 84px;
+  z-index: 30;
+  transition: 0.1s;
+}
+.contact-box:hover {
+  background-color: rgb(54, 131, 166);
+  transition: 0.1s;
+}
+.contact-box img {
+	padding-left: 1%;
+	padding-top: 1%;
+	position: fixed;
+	float: left;
+	margin-right: 20px;
+}
+.contact-box .name {
+	color: rgb(76,76,76);
+	padding-top: 6%;
+	padding-left: 30%;
+	font-family: Helvetica;
+	font-size: 100%;
+	float: left;
+	margin-right: 19%;
+	}
+.contact-box .last-msg {
+	opacity: 0.6;
+	color: rgb(76,76,76);
+	padding-top: 2%;
+	padding-left: 30%;
+	font-family: Helvetica;
+	font-size: 100%;
+	float: left;
+	}
+.contact-box .msg-time {
+	padding-top: 6.4%;
+	padding-right: 10%;
+	font-family: Helvetica;
+	font-size: 80%;
+	opacity: 0.6;
+}
+.contact-box:hover .name{
+	color: white;
+	transition: 0.1s;
+}
+.contact-box:hover .msg-time{
+	color: white;
+	transition: 0.1s;
+}
+.contact-box:hover .last-msg{
+	color: white;
+	transition: 0.1s;
+}
+*:focus {outline: none;}
+/*BURGER ICON*/
+.spinner-master2 * {transition:all 0.3s;-webkit-transition:all 0.3s;box-sizing:border-box;}
+
+.spinner-master2 {position:relative;margin-top:3px;margin-left: 30px;height:40px;width:40px; float: left;}
+
+.spinner-master2 input[type=checkbox] {display:none;}
+.spinner-master2 label {cursor:pointer;position:absolute;z-index:99;height:100%;width:100%;top:12px;left:0;}
+
+.spinner-master2 .spinner2 {position:absolute;height:2px;width:21;background-color:white;}
+
+.spinner-master2 .diagonal.part-1 {position:relative;float:left;}
+.spinner-master2 .horizontal {position:relative;float:left;margin-top:4px;}
+.spinner-master2 .diagonal.part-2 {position:relative;float:left;margin-top:4px;}
+
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {opacity: 0;}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {background-color: white;transform:rotate(45deg);margin-top:8px;}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {transform:rotate(-45deg);margin-top: -8px}
+
+.body-style{
+	background-color: rgb(231,235,240);
+}
+.media-heading {
+	color: #dd5638;
+	margin-bottom: 10px;
+}
+
+.media-body {
+	padding-top: 15px;
+}
