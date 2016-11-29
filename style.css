@@ -2,24 +2,37 @@
   background-color: rgb(54, 131, 166);
   position: fixed;
   left: 145px;
-  top: 0px;
   width: 989px;
   height: 44px;
   z-index: 11;
 }
 .bar .user-avatar img {
-	width: 3.8%;
-	height: 88%;
-	float: left;
+	width: 3.4%;
+	height: 76%;
+	float: right;
 	position: relative;
-	padding-left: 86%;
-	padding-top: 0.2%;
+	padding-right: 3%;
+	padding-top: 0.5%;
+	cursor: pointer;
+}
+.bar .settings-btn{
+	position: inherit;
+	width: 35;
+	height: 35;
+	float: right;
+	padding-top: 1%;
+	
 }
 .bar .settings-btn img{
-	position: relative;
-	width: 50%;
-	height: 50%;
+	width: 70%;
+	height: 70%;
 	padding-top: 1%;
+	padding-left: 1%;
+	opacity: 0.3;
+}
+.bar .settings-btn:hover img{ 
+  opacity: 0.6;
+  transition: 0.1s;
 }
 .block-left {
   background-color: rgb(255, 255, 255);
@@ -36,7 +49,7 @@
   border-style: solid;
   background-color: rgb(255, 255, 255);
   position: fixed;
-  right: 11.4%;
+  right: 11.6%;
   top: 4.7%;
   width: 52.8%; /*677px*/
   height: 92.3%; /*846px*/
@@ -89,11 +102,12 @@
 .contact-box {
   background-color: white; /*rgb(54, 131, 166)*/
   opacity: 0.902;
-  position: fixed;
+  position: relative;
   width: 309px;
   height: 84px;
   z-index: 30;
   transition: 0.1s;
+  margin-top: 10px;
 }
 .contact-box:hover {
   background-color: rgb(54, 131, 166);
@@ -125,11 +139,12 @@
 	float: left;
 	}
 .contact-box .msg-time {
-	padding-top: 6.4%;
+	padding-top: 2%;
 	padding-right: 8%;
 	font-family: Helvetica;
 	font-size: 80%;
 	opacity: 0.6;
+	float: right;
 }
 .contact-box:hover .name{
 	color: white;
