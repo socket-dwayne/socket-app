@@ -8,7 +8,7 @@
 	<header>
 	<div class="bar">
         <div class="spinner-master2">
-            <input type="checkbox" id="spinner-form2" />
+            <input type="checkbox" id="spinner-form2" href="javascript:void(0)" onclick="showHide('menu')"/>
             <label for="spinner-form2" class="spinner-spin2">
                 <div class="spinner2 diagonal part-1"></div>
                 <div class="spinner2 horizontal"></div>
@@ -24,13 +24,39 @@
 	</header>
 	<body class="body-style">
 	<div class="block-left">
+    <script type="text/javascript">
+            /**
+            * Функция Скрывает/Показывает блок 
+            * @author ox2.ru дизайн студия
+            **/
+            function showHide(element_id) {
+                //Если элемент с id-шником element_id существует
+                if (document.getElementById(element_id)) { 
+                    //Записываем ссылку на элемент в переменную obj
+                    var obj = document.getElementById(element_id); 
+                    //Если css-свойство display не block, то: 
+                    if (obj.style.display != "block") { 
+                        obj.style.display = "block"; //Показываем элемент
+                    }
+                    else obj.style.display = "none"; //Скрываем элемент
+                }
+                //Если элемент с id-шником element_id не найден, то выводим сообщение
+                else alert("Элемент с id: " + element_id + " не найден!"); 
+            }   
+        </script>
+		<div id="menu" class="menu-items" style="display:none;">
+		    <ul>
+			    <div class="new-group"><li><a href="#">New group<a></li></div>
+			    <li>Contacts</li>
+		    </ul>
+        </div>
 	    <div class="search-edit">
 	        <input type="text" class="search-edit" placeholder="Search" >
 		</div>
 		<div class="contact-box">
 		    <img class="avatar" src="assets/avtar1.png"/>
 			        <div class="name"><b>Evgeniy Trockiy</b></div>
-			        <div class="last-msg"><label>Test message</label></div>
+			        <div class="last-msg"><label>Socket App</label></div>
                     <div class="msg-time"><label>23:42<label></div>
 		</div>		
 		<div class="contact-box">
@@ -38,6 +64,12 @@
 			        <div class="name"><b>Yo Day</b></div>
 			        <div class="last-msg"><label>АВХЗА<label></div>
                     <div class="msg-time"><label>23:47<label></div>
+		</div>
+		<div class="contact-box">
+		    <img class="avatar" src="assets/avtar2.png"/>
+			        <div class="name"><b>Иван Абакумов</b></div>
+			        <div class="last-msg"><label>Убаыыы<label></div>
+                    <div class="msg-time"><label>13:37<label></div>
 		</div>
 	</div>
 	</div>
