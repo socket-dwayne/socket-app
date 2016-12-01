@@ -4,7 +4,7 @@
   left: 145px;
   width: 989px;
   height: 44px;
-  z-index: 11;
+  z-index: 800;
 }
 .bar .user-avatar img {
 	width: 3.4%;
@@ -87,10 +87,39 @@
   background-color: rgb(255, 255, 255);
   position: fixed;
   right: 11.6%;
-  top: 4.7%;
+  padding-top: 4.7%;
   width: 52.8%; /*677px*/
-  height: 92.3%; /*846px*/
-  z-index: 6;
+  height: 89.4%; /*846px*/
+  z-index: 99;
+}
+.block-right .input-box {
+	position: static;
+	padding-top: 100%;
+	padding-left: 23%;
+	
+}
+.block-right .input-box .sender-avatar {
+	float: left;
+	margin-right: 2%;
+	padding-top: -2%;
+	
+}
+.block-right .input-box .reciver-avatar {
+	float: right;
+	padding-right: 25.5%;
+	
+}
+.block-right .input-box .input-msg {
+  font-family: Helvetica;
+  font-size:14px;
+  padding:10px 20px 10px 5px;
+  display:block;
+  width: 250px;
+  border:none;
+  border-bottom:2px solid #3683a6;
+}
+.block-right .input-box .input-msg:focus {
+	border-color: #5682a3; 
 }
 .block-left .box-user {
   background-color: rgb(54, 131, 166);
@@ -165,7 +194,7 @@
 	font-size: 100%;
 	float: left;
 	margin-right: 19%;
-	}
+}
 .contact-box .last-msg {
 	opacity: 0.6;
 	color: rgb(76,76,76);
@@ -174,7 +203,7 @@
 	font-family: Helvetica;
 	font-size: 100%;
 	float: left;
-	}
+}
 .contact-box .msg-time {
 	padding-top: 2%;
 	padding-right: 8%;
@@ -195,24 +224,72 @@
 	color: white;
 	transition: 0.1s;
 }
-*:focus {outline: none;}
+*:focus {
+    outline: none;
+}
 /*BURGER ICON*/
-.spinner-master2 * {transition:all 0.3s;-webkit-transition:all 0.3s;box-sizing:border-box;}
+.spinner-master2 * {
+    transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	box-sizing:border-box;
+}
 
-.spinner-master2 {position:relative;margin-top:3px;margin-left: 30px;height:40px;width:40px; float: left;}
+.spinner-master2 {
+	position:relative;
+	margin-top:3px;
+	margin-left: 30px;
+	height:40px;
+	width:40px;
+	float: left;
+}
 
-.spinner-master2 input[type=checkbox] {display:none;}
-.spinner-master2 label {cursor:pointer;position:absolute;z-index:99;height:100%;width:100%;top:12px;left:0;}
+.spinner-master2 input[type=checkbox] {
+	display:none;
+}
+.spinner-master2 label {
+	cursor:pointer;
+	position:absolute;
+	z-index:99;
+	height:100%;
+	width:100%;
+	top:12px;
+	left:0;
+	}
 
-.spinner-master2 .spinner2 {position:absolute;height:2px;width:21;background-color:white;}
+.spinner-master2 .spinner2 {
+	position:absolute;
+	height:2px;
+	width:21;
+	background-color:white;
+}
 
-.spinner-master2 .diagonal.part-1 {position:relative;float:left;}
-.spinner-master2 .horizontal {position:relative;float:left;margin-top:4px;}
-.spinner-master2 .diagonal.part-2 {position:relative;float:left;margin-top:4px;}
+.spinner-master2 .diagonal.part-1 {
+position:relative;
+float:left;
+}
+.spinner-master2 .horizontal {
+	position:relative;
+    float:left;
+	margin-top:4px;
+}
+.spinner-master2 .diagonal.part-2 {
+	position:relative;
+	float:left;
+	margin-top:4px
+}
 
-.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {opacity: 0;}
-.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {background-color: white;transform:rotate(45deg);margin-top:8px;}
-.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {transform:rotate(-45deg);margin-top: -8px}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {
+	opacity: 0;
+}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {
+	background-color: white;
+	transform:rotate(45deg);
+	margin-top:8px;
+	}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {
+	transform:rotate(-45deg);
+	margin-top: -8px;
+	}
 
 .body-style{
 	background-color: rgb(231,235,240);

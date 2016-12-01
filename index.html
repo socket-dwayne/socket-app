@@ -25,22 +25,14 @@
 	<body class="body-style">
 	<div class="block-left">
     <script type="text/javascript">
-            /**
-            * Функция Скрывает/Показывает блок 
-            * @author ox2.ru дизайн студия
-            **/
             function showHide(element_id) {
-                //Если элемент с id-шником element_id существует
                 if (document.getElementById(element_id)) { 
-                    //Записываем ссылку на элемент в переменную obj
                     var obj = document.getElementById(element_id); 
-                    //Если css-свойство display не block, то: 
                     if (obj.style.display != "block") { 
-                        obj.style.display = "block"; //Показываем элемент
+                        obj.style.display = "block"; 
                     }
-                    else obj.style.display = "none"; //Скрываем элемент
+                    else obj.style.display = "none"; 
                 }
-                //Если элемент с id-шником element_id не найден, то выводим сообщение
                 else alert("Элемент с id: " + element_id + " не найден!"); 
             }   
         </script>
@@ -65,15 +57,14 @@
 			        <div class="last-msg"><label>АВХЗА<label></div>
                     <div class="msg-time"><label>23:47<label></div>
 		</div>
-		<div class="contact-box">
-		    <img class="avatar" src="assets/avtar2.png"/>
-			        <div class="name"><b>Иван Абакумов</b></div>
-			        <div class="last-msg"><label>Убаыыы<label></div>
-                    <div class="msg-time"><label>13:37<label></div>
-		</div>
 	</div>
 	</div>
 	<div class='block-right'>
+	    <div class="input-box">
+            <img class="sender-avatar" src="assets/avtar1.png"/>
+            <img class="reciver-avatar" src="assets/avtar2.png"/>
+	        <input type="text" class="input-msg">
+	    </div>
 	</div>
 	</body>
 	
